@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Price</title>
+    <title>BSE Stock Price and Chart</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+
 </head>
 <body>
-    
+    <div class="container">
+        <h1>BSE Stock Price and Chart</h1>
+        <form id="stockForm">
+            <input type="text" id="stockSymbol" placeholder="Enter BSE stock symbol (e.g., RELIANCE.BSE)" required>
+            <button type="submit">Get Stock Price & Chart</button>
+        </form>
+        <div id="dropdown">
+            <select name="stock" id="option"></select>
+            <p>Selected value:<span id="valueDisplay"></span></p>
+        </div>
+        <div id="result">
+            <!-- Stock price will be displayed here -->
+        </div>
+        <canvas id="stockChart"></canvas>
+    </div>
+    <script src="./assets/Js/script.js"></script>
 </body>
 </html>
