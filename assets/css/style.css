@@ -48,6 +48,9 @@ button:hover {
     padding: 5px 20px;
     border:solid;
 }
+#dropdown{
+    display: none;
+}
 
 #result {
     margin-top: 20px;
